@@ -1,22 +1,20 @@
 #include <stdio.h>
 
 int main(){
-    int senhaNova,senhaCadastrada;
+    int senhaOriginal, validacaoSenha = -1;
+    scanf("%d", &senhaOriginal);
+    printf("senha cadastrada: %d\n", senhaOriginal);
 
-    scanf("%d", &senhaCadastrada);
-    printf("senha cadastrada:%.4d\n",senhaCadastrada);
-    
     while(1){
-        scanf("%d", &senhaNova);
-        if(senhaNova == senhaCadastrada){
-            printf("senha valida!\n");
-            break;
-        } else
-        {
+        scanf("%d", &validacaoSenha);
+        if(validacaoSenha != senhaOriginal){
             printf("senha invalida!\n");
+        } else {
+            printf("senha valida\n");
         }
-        
-        
     }
+
+    printf("Senha valida\n");
+
     return 0;
 }
