@@ -3,11 +3,6 @@
 int main(){
    float salario;
    char nivelFuncionario;
-   #include <stdio.h>
-
-int main(){
-   float salario;
-   char nivelFuncionario;
    float porcentagem;
 
    scanf("%c",&nivelFuncionario);
